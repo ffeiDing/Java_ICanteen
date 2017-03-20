@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.netlab.vc.coursehelper">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/header"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"/>
+        <activity
+            android:name=".ChangeInfoActivity"
+            android:label="@string/title_activity_change_info"/>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CourseActivity"
+            android:label="@string/app_name"/>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/action_register"/>
+        <activity
+            android:name=".ElectiveActivity"
+            android:label="添加新课程">
+        </activity>
+        <activity
+            android:name=".TestListActivity"
+            android:label="测试列表">
+        </activity>
+        <activity
+            android:name=".QuestionListActivity"
+            android:label="">
+        </activity>
+        <activity
+            android:name=".CourseContentActivity"
+            android:label="内容">
+        </activity>
+        <activity
+            android:name=".LessonActivity"
+            android:label="内容">
+        </activity>
+        <activity
+            android:name=".AnnouncementActivity"
+            android:label="通知">
+        </activity>
+        <!--
+     ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <activity
+            android:name=".ForumActivity"
+            android:label="论坛">
+        </activity>
+        <activity
+            android:name=".GroupActivity"
+            android:label="小组">
+        </activity>
+        <activity
+            android:name=".GroupSecondActivity"
+            android:label="小组">
+        </activity>
+        <activity android:name=".NewPostActivity">
+        </activity>
+        <activity
+            android:name=".PostDetailActivity"
+            android:label="论坛">
+        </activity>
+        <activity
+            android:name=".ShowImageActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ShowMyGroupActivity"
+            android:label="我的小组">
+        </activity>
+        <activity
+            android:name=".GroupWaitingActivity"
+            android:label="待审核申请">
+        </activity>
+        <activity
+            android:name=".IAAALogin"
+            android:label="IAAA登录"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".IAAAElective"
+            android:label="@string/title_activity_iaaaelective"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+    </application>
+
+</manifest>

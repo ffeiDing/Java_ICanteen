@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Coursehelper</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">登录</string>
+    <string name="title_activity_change_info">修改个人信息</string>
+    <string name="add_delete_course">添加/删除课程</string>
+    <!-- Strings related to announcement -->
+    <string name="load_full">已加载全部</string>
+    <string name="no_data">暂无数据</string>
+    <string name="more">加载中</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">松开可以刷新</string>
+    <string name="lastUpdateTime">最近更新：%s</string>
+    <string name="d">图片描述</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">用户名</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_register">注册</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_username">用户名不合法</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">密码错误!</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+
+    <string name="interstitial_ad_sample">Interstitial Ad Sample</string>
+    <string name="start_level">Level 1</string>
+    <string name="next_level">Next Level</string>
+    <!-- -
+        This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <!-- Strings related to ChangeInfoActivity -->
+    <string name="action_change_info">保存修改</string>
+    <!-- Strings related to CourseActivity -->
+    <string name="sign_uped">已签到</string>
+    <string name="absence">缺勤</string>
+    <string name="sign_up">签到</string>
+    <string name="announcement_list">通知</string>
+    <string name="test_list">测试</string>
+    <string name="content_list">内容</string>
+    <string name="forum_list">论坛</string>
+    <string name="group_list">小组</string>
+    <string name="swipe_to_refresh">刷新</string>
+
+    <!-- Strings related to TestListActivity -->
+    <string name="no_tests">本课程暂时没有测试</string>
+    <!-- Strings related to QuestionListActivity -->
+    <string name="no_questions">没有找到测试问题</string>
+    <!-- Strings related to FinishedQuestionListActivity -->
+    <string name="no_finished_questions">没有找到回答过的问题</string>
+
+    <string name="single_choice">单选题</string>
+    <string name="multiple_choice">多选题</string>
+    <string name="true_or_false">判断题</string>
+    <string name="short_answer">简答题</string>
+    <string name="blank_filling">填空题</string>
+    <string name="correct_answer">正确答案：</string>
+    <string name="add">添加</string>
+    <string name="put_forward">提交</string>
+    <string name="signuping">签到中...</string>
+    <string name="signup">签到</string>
+    <string name="download">下载</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="forum_type_qa">答疑解惑</string>
+    <string name="forum_type_ex">经验分享</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="delete_group">删除小组</string>
+    <string name="title_activity_iaaaelective">IAAAElective</string>
+</resources>

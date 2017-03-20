@@ -1,0 +1,66 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/announcement_Layout"
+    android:background="#e8e8e7"
+    >
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+            android:id="@+id/announcement_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:paddingTop="5dip"
+                  android:paddingBottom="8dip"
+                  android:layout_below="@id/announcement_listview"
+                  android:id="@+id/footer_layout"
+                  android:visibility="gone">
+
+        <TextView
+            android:id="@+id/loadFull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/load_full"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/noData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/no_data"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/more" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            style="@style/customProgressBar" />
+
+    </LinearLayout>
+
+</RelativeLayout>

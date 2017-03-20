@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/load_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:indeterminateDrawable="@anim/loading_progressbar"/>
+
+            <LinearLayout
+                android:id="@+id/main_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:id="@+id/course_name"
+                        android:text="计算机网络概论"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/course_img"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/course_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_name"
+                        android:layout_toRightOf="@id/course_img"
+                        android:text="2016年秋季学期"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/course_teacher"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_date"
+                        android:layout_toRightOf="@id/course_img"
+                        android:text="严伟"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:id="@+id/course_img"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/cn5"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/text_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="35dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/signup" />
+
+                    <TextView
+                        android:id="@+id/sign_uped"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/img1"
+                        android:gravity="center_vertical"
+                        android:text="@string/sign_uped"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sign_uped_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/sign_uped"
+                        android:gravity="center_vertical"
+                        android:text="15"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/absence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/sign_uped_info"
+                        android:gravity="center_vertical"
+                        android:text="@string/absence"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/absence_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/absence"
+                        android:gravity="center_vertical"
+                        android:text="2"
+                        android:textSize="19sp" />
+
+                    <Button
+                        android:id="@+id/sign_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/button_common"
+                        android:text="@string/sign_up"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="?android:attr/textColorTertiary"
+                        android:textSize="19sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/text_gray" />
+
+                <LinearLayout
+                    android:id="@+id/announcement_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/announcement" />
+
+                    <TextView
+                        android:id="@+id/announcement_list_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/announcement_list"
+                        android:gravity="center_vertical"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/text_gray" />
+
+                <LinearLayout
+                    android:id="@+id/test_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/test" />
+
+                    <TextView
+                        android:id="@+id/test_list_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="@string/test_list"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/text_gray" />
+
+                <LinearLayout
+                    android:id="@+id/content_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/content" />
+
+                    <TextView
+                        android:id="@+id/content_list_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="@string/content_list"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/text_gray" />
+
+                <LinearLayout
+                    android:id="@+id/forum_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/forum" />
+
+                    <TextView
+                        android:id="@+id/forum_list_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="@string/forum_list"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/text_gray" />
+
+                <LinearLayout
+                    android:id="@+id/group_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/group" />
+
+                    <TextView
+                        android:id="@+id/group_list_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="@string/group_list"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/text_gray" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

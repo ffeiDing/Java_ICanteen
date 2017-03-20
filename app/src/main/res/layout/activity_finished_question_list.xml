@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/question_list"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:divider="@color/transparent"
+        android:dividerHeight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fastScrollEnabled="true"
+        android:padding="10dp">
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/load_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminateDrawable="@anim/loading_progressbar"/>
+
+    <TextView
+        android:id="@+id/no_contents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/no_finished_questions"
+        android:visibility="gone"
+        android:textSize="17sp"
+        android:textColor="@color/gray"/>
+</RelativeLayout>

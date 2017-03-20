@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/cn5"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/elective_course_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/elective_course_image"
+            android:gravity="center_vertical"
+            android:text="TextView"
+            android:textStyle="bold"
+            android:id="@+id/elective_course_name"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@mipmap/add"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:id="@+id/add_image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/elective_course_image"
+            android:layout_height="1dp"
+            android:background="@color/text_gray" />
+
+    </RelativeLayout>
+</RelativeLayout>

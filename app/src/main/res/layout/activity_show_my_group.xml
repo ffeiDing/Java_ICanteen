@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/show_group_refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.netlab.vc.coursehelper.ElectiveActivity">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/group_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.netlab.vc.coursehelper.MainActivity"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/group_name_hint"
+            android:textSize="19sp"
+            android:text="组名："
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#636363"
+            />
+        <TextView
+            android:id="@+id/group_name"
+            android:textSize="19sp"
+            android:layout_toRightOf="@+id/group_name_hint"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#636363"
+            />
+        <TextView
+            android:layout_below="@+id/group_name_hint"
+            android:paddingTop="20dp"
+            android:id="@+id/group_leader_name_hint"
+            android:textSize="19sp"
+            android:text="组长："
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#636363"
+            />
+
+        <TextView
+            android:id="@+id/group_leader_name"
+            android:textSize="19sp"
+            android:paddingTop="20dp"
+            android:layout_below="@+id/group_name"
+            android:layout_toRightOf="@+id/group_leader_name_hint"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#636363"
+            />
+        <TextView
+            android:layout_below="@+id/group_leader_name_hint"
+            android:paddingTop="20dp"
+            android:id="@+id/group_member_name_hint"
+            android:textSize="19sp"
+            android:text="组员："
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#636363"
+            />
+
+        <ListView
+            android:layout_toRightOf="@+id/group_member_name_hint"
+            android:paddingTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:divider="@null"
+            android:id="@+id/group_member_list"
+            android:layout_below="@+id/group_leader_name"
+            tools:listitem="@layout/group_member_item" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/group_member_list"
+        android:id="@+id/group_delete"
+        android:textColor="@color/bg_white"
+        android:background="@color/light_red"
+        android:text="@string/delete_group"
+        android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,129 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/announcement_Layout"
+    android:fitsSystemWindows="true"
+    android:background="#e8e8e7"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:id="@+id/top_tab"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:id="@+id/text_qa"
+                android:text="@string/forum_type_qa"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:id="@+id/text_ex"
+                android:text="@string/forum_type_ex"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="40dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:id="@+id/qa_underline"
+                android:background="@color/light_red" />
+            <View
+                android:layout_width="40dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/ex_underline"
+                android:background="@color/bg_gray"
+
+                />
+        </LinearLayout>
+        </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_tab"
+        android:id="@+id/forum_pager">
+
+    </android.support.v4.view.ViewPager>
+    <!--
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_tab">
+    <ListView
+        android:id="@+id/forum_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="5dip"
+        android:paddingBottom="8dip"
+        android:layout_below="@id/refreshLayout"
+        android:id="@+id/footer_layout"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/loadFull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/load_full"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/noData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/no_data"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/more" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            style="@style/customProgressBar" />
+
+    </LinearLayout>
+    -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_newpost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/ic_create_black_24dp"/>
+</RelativeLayout>
