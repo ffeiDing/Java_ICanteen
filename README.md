@@ -1,2 +1,2 @@
-# CourseHelper - Android App
-Computer Networks Project,Fall 2016
+# ICanteen - Android App
+wzc, dff, zhy
