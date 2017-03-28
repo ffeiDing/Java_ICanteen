@@ -41,11 +41,11 @@
 * API: /user/info.php
 * HTTP Method: POST
 * Parameters:
-	_id: Integer
-	name: String
-	old_password: String
-	new_password: String
-	token: String
+	* _id: Integer
+	* name: String
+	* old_password: String
+	* new_password: String
+	* token: String
 
 * 401 Not Login: Happen when 'token' is tampered.
 
